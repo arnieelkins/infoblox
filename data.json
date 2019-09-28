@@ -1,0 +1,10 @@
+{
+    "args": {},
+    "data": "{
+        "name": "my_new_hostname",
+    "ipv4addrs": [
+        {
+            "ipv4addr": "func:nextavailableip:192.168.100.0/24"
+        }
+    ]
+}", "files": {}, "form": {}, "headers": {"Accept": "*/*", "Accept-Encoding": "gzip, deflate", "Content-Length": "97", "Content-Type": "application/json", "Host": "httpbin.org", "User-Agent": "python-requests/2.22.0"}, "json": {"ipv4addrs": [{"ipv4addr": "func:nextavailableip:192.168.100.0/24"}], "name": "my_new_hostname"}, "origin": "47.221.145.117, 47.221.145.117", "url": "https://httpbin.org/post"}

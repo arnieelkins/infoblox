@@ -7,6 +7,7 @@ verify_ssl = true
 
 [packages]
 requests = "*"
+pretty-json = "*"
 
 [requires]
 python_version = "3.7"
