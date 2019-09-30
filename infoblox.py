@@ -9,10 +9,19 @@ import requests
 
 
 def create_host_record_next_ip(hostname, subnet):
-    # base_url = "http://172.16.15.254"
-    # endpoint = "wapi/v1.2/record:host"
-    base_url = "http://httpbin.org"
-    endpoint = "/post"
+    """
+    create_host_record_next_ip will (shock!)
+    create a new host record in Infoblox,
+    using the next avaialble IP address in the
+    subnet provided.
+    """
+    # base_url will be infoblox grid
+    base_url = "http://172.16.15.254"
+    # endpoint is the REST endpoint on the infoblox server
+    endpoint = "/wapi/v1.2/record:host"
+    # use the two lines below to test via htpbin.org
+    # base_url = "http://httpbin.org"
+    # endpoint = "/post"
     url = base_url + endpoint
     header_dict = {"Content-Type": "application/json"}
     func = "func:nextavailableip:{}".format(subnet)
